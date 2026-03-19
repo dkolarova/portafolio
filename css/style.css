@@ -6,9 +6,19 @@ padding:0;
 box-sizing:border-box;
 }
 
+:root{
+--bg-main:#000000;
+--surface-1:#165050;
+--surface-2:#000;
+--surface-3:#0e0305;
+--surface-hover:#640219;
+--border-soft:rgba(255, 255, 255, 0.543);
+--border-strong:rgba(255,205,218,0.46);
+}
+
 body{
 font-family:"Noto Sans Telugu", sans-serif;
-background:#0f172a;
+background:var(--bg-main);
 color:white;
 transition:0.3s;
 animation:pageFadeIn .14s ease;
@@ -120,7 +130,7 @@ position:absolute;
 top:70px;
 right:20px;
 flex-direction:column;
-background:rgba(0,0,0,0.8);
+background:rgba(18,8,12,0.9);
 padding:20px;
 border-radius:10px;
 display:none;

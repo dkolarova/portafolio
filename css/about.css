@@ -36,8 +36,8 @@ gap:60px;
 align-items:center;
 padding:64px;
 border-radius:24px;
-background:#162033;
-border:1px solid rgba(255,255,255,0.18);
+background:var(--surface-2);
+border:1px solid var(--border-soft);
 box-shadow:0 24px 46px rgba(0,0,0,0.38);
 }
 
@@ -52,8 +52,8 @@ display:inline-block;
 padding:8px 14px;
 border-radius:999px;
 font-size:1.08rem;
-background:rgba(255,255,255,0.08);
-border:1px solid rgba(255,255,255,0.14);
+background:rgba(176,37,68,0.24);
+border:1px solid rgba(255,185,201,0.3);
 opacity:.95;
 margin-bottom:24px;
 }
@@ -71,7 +71,7 @@ max-width:450px;
 display:block;
 margin-left:auto;
 border-radius:20px;
-border:1px solid rgba(255,255,255,0.18);
+/* border:1px solid var(--border-soft); */
 box-shadow:0 28px 48px rgba(0,0,0,0.45);
 }
 
@@ -80,8 +80,8 @@ width:min(1200px, calc(100% - 80px));
 margin:28px auto;
 padding:64px;
 border-radius:24px;
-background:#162033;
-border:1px solid rgba(255,255,255,0.18);
+background:var(--surface-2);
+border:1px solid var(--border-soft);
 box-shadow:0 24px 46px rgba(0,0,0,0.38);
 }
 
@@ -109,22 +109,6 @@ grid-template-columns:1fr 1fr;
 gap:30px;
 margin-top:30px;
 }
-
-.skills-grid > div{
-padding:34px;
-border-radius:20px;
-background:#1a253a;
-border:1px solid rgba(255, 255, 255, 0.048);
-box-shadow:0 16px 32px rgba(0,0,0,0.28);
-transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-}
-
-/* .skills-grid > div:hover{
-transform:translateY(-8px) scale(1.01);
-border-color:rgba(255,255,255,0.35);
-box-shadow:0 24px 50px rgba(0,0,0,0.42);
-} */
-
 .skills-grid h3{
 font-size:1.7rem;
 margin-bottom:18px;
@@ -138,6 +122,19 @@ grid-template-columns:repeat(2, minmax(0, 1fr));
 gap:14px;
 }
 
+@media (max-width:1050px){
+
+.skills-grid{
+grid-template-columns:1fr;
+gap:22px;
+}
+
+.skills-grid > div{
+padding:30px;
+}
+
+}
+
 .skills-grid li{
 display:flex;
 flex-direction:column;
@@ -149,8 +146,8 @@ font-weight:600;
 text-align:center;
 padding:16px 10px;
 border-radius:14px;
-background:#0f172a;
-border:1px solid rgba(255,255,255,0.12);
+background:var(--bg-main);
+border:1px solid rgba(255, 255, 255, 0.393);
 }
 
 .skill-logo{
@@ -158,9 +155,9 @@ width:58px;
 height:58px;
 display:inline-block;
 border-radius:14px;
-background:rgba(255,255,255,0.12);
-border:1px solid rgba(255,255,255,0.24);
-box-shadow:0 0 0 1px rgba(255,255,255,0.07), 0 10px 20px rgba(0,0,0,0.28);
+background:rgb(255, 255, 255);
+border:1px solid rgb(255, 255, 255);
+box-shadow:0 0 0 1px rgba(255,192,203,0.07), 0 10px 20px rgba(0,0,0,0.28);
 object-fit:cover;
 padding:3px;
 transition:transform .2s ease, box-shadow .2s ease;
@@ -168,7 +165,7 @@ transition:transform .2s ease, box-shadow .2s ease;
 
 .skills-grid li:hover .skill-logo{
 transform:scale(1.08);
-box-shadow:0 0 0 1px rgba(255,255,255,0.12), 0 0 18px rgba(255,255,255,0.25), 0 12px 22px rgba(0,0,0,0.35);
+box-shadow:0 0 0 1px rgba(176, 3, 20, 0.16), 0 0 18px rgba(171,40,72,0.42), 0 12px 22px rgba(0,0,0,0.35);
 }
 
 .softwares-list{
@@ -193,14 +190,14 @@ font-weight:600;
 text-align:center;
 padding:16px 12px;
 border-radius:14px;
-background:#1a253a;
-border:1px solid rgba(255,255,255,0.18);
+background:var(--surface-2);
+border:1px solid var(--border-soft);
 transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
 /* .softwares-list li:hover{
 transform:translateY(-6px) scale(1.02);
-border-color:rgba(255,255,255,0.35);
+border-color:var(--border-strong);
 box-shadow:0 16px 36px rgba(0,0,0,0.35);
 } */
 
@@ -209,9 +206,9 @@ width:60px;
 height:60px;
 display:inline-block;
 border-radius:12px;
-background:rgba(255,255,255,0.12);
-border:1px solid rgba(255,255,255,0.24);
-box-shadow:0 0 0 1px rgba(255,255,255,0.07), 0 10px 20px rgba(0,0,0,0.28);
+background:rgb(255, 255, 255);
+border:1px solid rgba(255,189,205,0.26);
+box-shadow:0 0 0 1px rgba(255,192,203,0.07), 0 10px 20px rgba(0,0,0,0.28);
 object-fit:contain;
 padding:4px;
 transition:transform .2s ease, box-shadow .2s ease;
@@ -225,7 +222,7 @@ padding:0;
 
 .softwares-list li:hover .software-logo{
 transform:scale(1.12);
-box-shadow:0 0 0 1px rgba(255,255,255,0.12), 0 0 20px rgba(255,255,255,0.25), 0 12px 24px rgba(0,0,0,0.35);
+box-shadow:0 0 0 1px rgba(224, 4, 52, 0.16), 0 0 20px rgba(171,40,72,0.45), 0 12px 24px rgba(0,0,0,0.35);
 }
 
 @media (max-width:800px){
@@ -294,6 +291,30 @@ padding:3px;
 width:44px;
 height:44px;
 padding:0;
+}
+
+}
+
+@media (max-width:560px){
+
+.skills-grid > div{
+padding:22px 16px;
+}
+
+.skills-grid ul{
+grid-template-columns:1fr;
+gap:10px;
+}
+
+.skills-grid li{
+font-size:1rem;
+padding:12px 10px;
+}
+
+.skill-logo{
+width:44px;
+height:44px;
+padding:2px;
 }
 
 }

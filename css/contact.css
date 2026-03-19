@@ -3,8 +3,8 @@ width:min(980px, 100%);
 margin:0 auto;
 padding:76px;
 border-radius:24px;
-background:#162033;
-border:1px solid rgba(255,255,255,0.18);
+background:var(--surface-2);
+border:1px solid var(--border-soft);
 box-shadow:0 24px 46px rgba(0,0,0,0.38);
 text-align:center;
 }
@@ -32,8 +32,8 @@ justify-content:center;
 gap:10px;
 padding:18px 20px;
 border-radius:14px;
-background:#1a253a;
-border:1px solid rgba(255,255,255,0.16);
+background:var(--surface-3);
+border:1px solid var(--border-soft);
 color:white;
 text-decoration:none;
 font-size:1.34rem;
@@ -50,7 +50,7 @@ isolation:isolate;
 content:"";
 position:absolute;
 inset:0;
-background:linear-gradient(120deg, transparent 25%, rgba(255,255,255,0.18) 50%, transparent 75%);
+background:linear-gradient(120deg, transparent 25%, rgba(255, 245, 247, 0.28) 50%, transparent 75%);
 transform:translateX(-130%);
 transition:transform .35s ease;
 z-index:0;
@@ -73,9 +73,9 @@ border-radius: 60px;
 
 .contact-links a:hover{
 transform:translateY(-3px);
-border-color:rgba(255,255,255,0.34);
-background:#21304b;
-box-shadow:0 16px 30px rgba(0,0,0,0.34);
+border-color:var(--border-strong);
+background:var(--surface-hover);
+box-shadow:0 16px 30px rgba(99, 15, 15, 0.34);
 opacity:1;
 }
 
@@ -85,7 +85,7 @@ transform:translateX(130%);
 
 .contact-links a:active{
 transform:translateY(0) scale(0.98);
-box-shadow:0 8px 16px rgba(0,0,0,0.26);
+box-shadow:0 8px 16px rgba(179, 4, 4, 0.775);
 }
 
 @media (max-width:700px){
