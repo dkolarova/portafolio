@@ -1,4 +1,4 @@
-	document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 	const selectors = [
 		".hero",
 		".about-intro",
@@ -44,4 +44,4 @@
 	);
 
 	targets.forEach((element) => observer.observe(element));
-	});
+});

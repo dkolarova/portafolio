@@ -1,5 +1,4 @@
 const toggle = document.getElementById("themeToggle")
-
 if(toggle){
 
 const savedTheme = localStorage.getItem("theme")
@@ -27,5 +26,4 @@ localStorage.setItem("theme","light")
 }
 
 })
-
 }

@@ -1,14 +1,14 @@
 const hero = document.querySelector(".hero")
 
-if(hero){
+	if(hero){
 
-document.addEventListener("mousemove", (e)=>{
+	document.addEventListener("mousemove", (e)=>{
 
-const x = (window.innerWidth/2 - e.pageX)/40
-const y = (window.innerHeight/2 - e.pageY)/40
+	const x = (window.innerWidth/2 - e.pageX)/40
+	const y = (window.innerHeight/2 - e.pageY)/40
 
-hero.style.transform = `translate(${x}px, ${y}px)`
+	hero.style.transform = `translate(${x}px, ${y}px)`
 
-})
+	})
 
 }
